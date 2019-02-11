@@ -4,27 +4,71 @@
 \begin{document}
 \maketitle
 \section{Ultra Light Dark Matter}
+If dark matter is in the form of an ultralight scalar field which can be treated as a classical field, one can represent it in the following form:
+\[\phi(t,\mathbf r)=\phi_0 e^{i(m_\phi t +\mathbf p \cdot \mathbf r)}\]
+
+This could then have some coupling to normal matter, such as coupling to baryon number or B-L, which would lead to a force in the Fourier domain of the form:
+\[\mathbf{f}(\omega,\mathbf r)\sim g q\sqrt{2 \rho_{DM}}\ \delta(\omega- \omega_\phi)\ e^{i\mathbf p \cdot \mathbf r}\ \mathbf v\]
+
+where $g$ is coupling between the dark matter field and normal matter, $q$ is the test particle ``charge'' (B, B-L, etc.), $\rho_{DM}$ is the local dark matter density, and $\omega_\phi$ is the frequency corresponding to the dark matter mass.\\
+
+This can be generalized to be more model agnostic to include any model which gives a weakly coupled plane wave as:
+\[\mathbf{f}(\omega,\mathbf r)\sim f(\omega)\delta(\omega- \omega_\phi)\ e^{i\mathbf p \cdot \mathbf r}\ \hat \mathbf f\]
 
 \section{Earth Normal Modes}
 Following the derivation by Aki and Richards [1], to derive the displacement due to a generic force we start by analyzing the equation of motion of the $\alpha$th particle in a discrete collection of the point particles:
-\[m_a \ddot{ \vec {u}}_\alpha+\gamma\dot{ \vec {u}}_\alpha+\sum^N_\beta c_{\alpha \beta} \vec{u}_\beta=\vec{f}_\alpha\] 
+\[m_a \ddot{ \mathbf {u}}_\alpha+\gamma\dot{ \mathbf {u}}_\alpha+\sum^N_\beta c_{\alpha \beta} \mathbf{u}_\beta=\mathbf{f}_\alpha\] 
 
-where $c_{\alpha \beta}$ is the spring constant between the $\alpha$th and $\beta$th particle. Now decomposing into normal modes and taking the Fourier transform:
-\[-m_a \omega^2 \sum_i u_{\alpha,i}\hat {n}_{\alpha,i}+i \omega \sum_i \gamma_i u_{\alpha,i}\hat {n}_{\alpha,i}+\sum^N_\beta c_{\alpha \beta} \sum_i u_{\beta,i}\hat {n}_{\beta,i}=\vec{f}_\alpha\]
+where $c_{\alpha \beta}$ is the spring constant between the $\alpha$th and $\beta$th particle, $\mathbf{u}_\alpha$ is the displacement of the $\alpha$th particle, $\gamma$ is the damping constant, and $m_\alpha$ is the mass of the $\alpha$th particle. Now decomposing into normal modes and taking the Fourier transform:
+\[-m_a \omega^2 \sum_i u_{\alpha,i}\hat \mathbf {n}_{\alpha,i}+i \omega \sum_i \gamma_i u_{\alpha,i}\hat \mathbf {n}_{\alpha,i}+\sum^N_\beta c_{\alpha \beta} \sum_i u_{\beta,i}\hat \mathbf {n}_{\beta,i}=\mathbf{f}_\alpha\]
 
-where $u_{\beta,i}$ and $\hat {n}_{\beta,i}$ are the amplitude in the ith mode and it's respective normal mode vector. Using the orthogonality and normalization given my Aki and Richards:
-\[\vec u_{\alpha}(\vec r,\omega)=\sum_i\frac{\sum_\beta \hat{n}(\vec r_\beta)_{\beta,i} ^*\cdot\vec{f}(\vec r_\beta,\omega)_\beta}{\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat {n}(\vec r)_{\alpha,i}\]
+where $u_{\beta,i}$ and $\hat \mathbf {n}_{\beta,i}$ are the amplitude in the ith mode (i represents a selection of n, l, and m) and it's respective normal mode vector. Using the orthogonality and normalization given my Aki and Richards:
+\[\mathbf u_{\alpha}(\mathbf r,\omega)=\sum_i\frac{\sum_\beta \hat \mathbf{n}(\mathbf r_\beta)_{\beta,i} ^*\cdot\mathbf{f}(\mathbf r_\beta,\omega)_\beta}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{\alpha,i}\]
 
 Generalizing to continuum:
-\[\vec u(\vec r,\omega)=\sum_i\frac{\int \hat{n}(\vec r\ ')_{i} ^*\cdot\vec{f}(\vec r\ ',\omega) dV '}{\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat {n}(\vec r)_{i}\]
+\[\mathbf u(\mathbf r,\omega)=\sum_i\frac{\int \hat \mathbf{n}(\mathbf r')_{i} ^*\cdot\mathbf{f}(\mathbf r',\omega) dV '}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{i}\]
+
+As reference the normal modes for spheroidal motion are as follows:
+\[_n\hat \mathbf{n}(\mathbf r)_{l}^m=\bigg( \frac{d}{dr} j_l(_n \omega _l r /c)\bigg) \mathbf R_l^m (\theta, \phi) +\frac{\sqrt{l(l+1)}}{r}  j_l(_n \omega _l r /c) \mathbf S_l^m (\theta, \phi) \]
+
+\[\mathbf{R}_l^m (\theta, \phi)=Y_l^m \hat \mathbf r\]
+
+\[\mathbf S_l^m (\theta, \phi) = \frac{1}{\sqrt{l(l+1)}}\bigg( \frac{\partial Y_l^m}{\partial \theta}\hat \mathbf \theta+\frac{1}{sin\ \theta}\frac{\partial Y_l^m}{\partial \phi}\hat \mathbf \phi \bigg)\]
+
+\section{Constraining dark matter with normal modes}
+
+Since the earth normal modes have been measured during times with little to no terrestrial excitation  [2, 3], we can combine these two results to set limits on the dark matter coupling to normal matter. The picture is that if the earth is being constantly rung with the dark matter (DM) field, then the normal mode amplitudes would never fall below some level . Additionally, since the earth and DM field would have been interacting for an extended period of time, the normal mode and DM field would be phase coherent at the time of measurement. This allows us to ignore any time evolution of the proposed response. 
+
+Picking one normal mode and measuring the displacement at the given normal mode frequency would yield the following:
+
+\[\mathbf u(\mathbf r,\omega)=\frac{-i Q}{\omega^2}\ \hat \mathbf {n}(\mathbf r)\int \hat \mathbf{n}(\mathbf r')^*\cdot\mathbf{f}(\mathbf r',\omega) dV '\]
+
+Substituting the plane wave force in:
+
+\[\mathbf u(\mathbf r,\omega)=\frac{-i Qf(\omega)}{\omega^2}\ \hat \mathbf {n}(\mathbf r)\ \int \hat \mathbf{n}(\mathbf r') ^*\cdot\hat \mathbf{f}e^{i \mathbf p \cdot \mathbf r'} dV '\]
+
+Expanding plane wave in spherical harmonics:
+
+\[\mathbf u(\mathbf r,\omega)=\frac{-i Qf(\omega)}{\omega^2}\ \hat \mathbf {n}(\mathbf r)\ \int \hat \mathbf{n}(\mathbf r')^*\cdot\hat \mathbf{f}\ \bigg( 4\pi \sum_l \sum_m i^l j_l(pr) Y_l^m(\hat\mathbf p)Y_l^{m *}(\hat\mathbf r)\bigg) dV '\]
+
+From here we can substitute the normal mode vector, set up a coordinate system, do the integrals, and (with some assumptions about the placement of the sensor with respect to the nodes of the normal mode) get a relationship between the measured displacement and the amplitude of the plane wave force.
+
+\section{Comparison to similar literature}
+In Ref. 4 and 5, the authors do a similar analysis by relating the proposed dark matter fields to a metric strain amplitude and thus set limits on apparent changes of fundamental constants caused by the DM field. This may be able to be generalized to set limits on the coupling strength of the field but the path to this was not obvious when starting this analysis. The above equations however give a framework to calculate the response given any plane wave weakly interacting with the earth at a normal mode frequency.
+
 \section{References}
-[1] Quantitative Seismology 2nd Edition, Keiiti Aki and Paul G. Richards
+ \begin{enumerate}
+\item Quantitative Seismology 2nd Edition, Keiiti Aki and Paul G. Richards
 
-[2] Constraining the gravitational wave energy density of the Universe using Earth’s ring, Michael Coughlin and Jan Harms, Phys. Rev. D 90, 042005 (2014) 
+\item Constraining the gravitational wave energy density of the Universe using Earth’s ring, Michael Coughlin and Jan Harms, Phys. Rev. D 90, 042005 (2014) 
 
-[3] Sound of Dark Matter: Searching for Light Scalars with Resonant-Mass Detectors, Asimina Arvanitaki, Savas Dimopoulos, and Ken Van Tilburg, Phys. Rev. Lett. 116, 031102 (2016)
+\item Weiss, R., and B. Block (1965), A gravimeter to monitor the 0 S 0 dilational mode of the Earth, J. Geophys. Res., 70(22), 5615–5627 doi:10.1029/ JZ070i022p05615.
 
-[4] Weiss, R., and B. Block (1965), A gravimeter to monitor the 0 S 0 dilational mode of the Earth, J. Geophys. Res., 70(22), 5615–5627, doi:10.1029/JZ070i022p05615.
+\item Sound of Dark Matter: Searching for Light Scalars with Resonant-Mass Detectors, Asimina Arvanitaki, Savas Dimopoulos, and Ken Van Tilburg, Phys. Rev. Lett. 116, 031102 (2016)
 
+\item Search for light scalar dark matter with atomic gravitational wave detectors
+Asimina Arvanitaki, Peter W. Graham, Jason M. Hogan, Surjeet Rajendran, and Ken Van Tilburg
+Phys. Rev. D 97, 075020 (2018)
+\end{enumerate}
 
 \end{document}
