@@ -1,0 +1,30 @@
+\documentclass{article}
+\title{Ultra light dark matter ringing earth normal modes}
+\author{M.P.Ross}
+\begin{document}
+\maketitle
+\section{Ultra Light Dark Matter}
+
+\section{Earth Normal Modes}
+Following the derivation by Aki and Richards [1], to derive the displacement due to a generic force we start by analyzing the equation of motion of the $\alpha$th particle in a discrete collection of the point particles:
+\[m_a \ddot{ \vec {u}}_\alpha+\gamma\dot{ \vec {u}}_\alpha+\sum^N_\beta c_{\alpha \beta} \vec{u}_\beta=\vec{f}_\alpha\] 
+
+where $c_{\alpha \beta}$ is the spring constant between the $\alpha$th and $\beta$th particle. Now decomposing into normal modes and taking the Fourier transform:
+\[-m_a \omega^2 \sum_i u_{\alpha,i}\hat {n}_{\alpha,i}+i \omega \sum_i \gamma_i u_{\alpha,i}\hat {n}_{\alpha,i}+\sum^N_\beta c_{\alpha \beta} \sum_i u_{\beta,i}\hat {n}_{\beta,i}=\vec{f}_\alpha\]
+
+where $u_{\beta,i}$ and $\hat {n}_{\beta,i}$ are the amplitude in the ith mode and it's respective normal mode vector. Using the orthogonality and normalization given my Aki and Richards:
+\[\vec u_{\alpha}(\vec r,\omega)=\sum_i\frac{\sum_\beta \hat{n}(\vec r_\beta)_{\beta,i} ^*\cdot\vec{f}(\vec r_\beta,\omega)_\beta}{\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat {n}(\vec r)_{\alpha,i}\]
+
+Generalizing to continuum:
+\[\vec u(\vec r,\omega)=\sum_i\frac{\int \hat{n}(\vec r\ ')_{i} ^*\cdot\vec{f}(\vec r\ ',\omega) dV '}{\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat {n}(\vec r)_{i}\]
+\section{References}
+[1] Quantitative Seismology 2nd Edition, Keiiti Aki and Paul G. Richards
+
+[2] Constraining the gravitational wave energy density of the Universe using Earth’s ring, Michael Coughlin and Jan Harms, Phys. Rev. D 90, 042005 (2014) 
+
+[3] Sound of Dark Matter: Searching for Light Scalars with Resonant-Mass Detectors, Asimina Arvanitaki, Savas Dimopoulos, and Ken Van Tilburg, Phys. Rev. Lett. 116, 031102 (2016)
+
+[4] Weiss, R., and B. Block (1965), A gravimeter to monitor the 0 S 0 dilational mode of the Earth, J. Geophys. Res., 70(22), 5615–5627, doi:10.1029/JZ070i022p05615.
+
+
+\end{document}
