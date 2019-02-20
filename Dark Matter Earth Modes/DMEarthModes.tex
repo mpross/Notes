@@ -28,12 +28,26 @@ where $u_{\beta,i}$ and $\hat \mathbf {n}_{\beta,i}$ are the amplitude in the it
 Generalizing to continuum:
 \[\mathbf u(\mathbf r,\omega)=\sum_i\frac{\int \hat \mathbf{n}(\mathbf r')_{i} ^*\cdot\mathbf{f}(\mathbf r',\omega) dV '}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{i}\]
 
-As reference the normal modes for spheroidal motion are as follows:
-\[_n\hat \mathbf{n}(\mathbf r)_{l}^m=\bigg( \frac{d}{dr} j_l(_n \omega _l r /c)\bigg) \mathbf R_l^m (\theta, \phi) +\frac{\sqrt{l(l+1)}}{r}  j_l(_n \omega _l r /c) \mathbf S_l^m (\theta, \phi) \]
+As reference the normal modes for spheroidal motion for $l\neq 0$ are as follows [6] :
+\[_n\hat \mathbf{n}(\mathbf r)_{l}^m=a_{n,l}(r)Y_l^m(\theta,\phi) \hat \mathbf r +b_{n,l}(r) R  \mathbf \nabla Y_l^m(\theta,\phi) \]
 
-\[\mathbf{R}_l^m (\theta, \phi)=Y_l^m \hat \mathbf r\]
+\[a_{n,l}(r)=c_{n,l}\bigg[\alpha_{n,l} \frac{dj_l(qr)}{d(qr)}-\beta_{n,l} l(l+1) \frac{j_l(kr)}{kr}\bigg]\]
 
-\[\mathbf S_l^m (\theta, \phi) = \frac{1}{\sqrt{l(l+1)}}\bigg( \frac{\partial Y_l^m}{\partial \theta}\hat \mathbf \theta+\frac{1}{sin\ \theta}\frac{\partial Y_l^m}{\partial \phi}\hat \mathbf \phi \bigg)\]
+\[b_{n,l}(r)=c_{n,l}\frac{r}{R}\bigg[\alpha_{n,l} \frac{j_l(qr)}{qr}-\beta_{n,l}\bigg(\frac{j_l(kr)}{kr}+ \frac{dj_l(kr)}{d(kr)}\bigg)\bigg]\]
+
+\[\alpha_{n,l} =\frac{1}{2}\bigg[  \frac{d^2j_l(kR)}{d(kR)^2}+(l-1)(l+2) \frac{j_l(kR)}{(kR)^2} \bigg]\]
+
+\[\beta_{n,l}=\frac{q}{k}\frac{d}{d(qR)}\bigg(\frac{j_l(qR)}{qR}\bigg)\]
+
+\[q^2=\frac{\rho \omega^2}{\lambda+2\mu},\quad k^2=\frac{\rho \omega^2}{\mu}\]
+
+where $\lambda$ and $\mu$ are the Lam\'e parameters of the material and R is the radius of the earth.
+
+And for for $l= 0$:
+
+\[_n\hat \mathbf{n}(\mathbf r)_{0}^0=a_{n,0}(r)\hat \mathbf r \]
+
+\[\alpha_{n,l} =c_{n,0}\frac{dj_0(qr)}{d(qr)}\]
 
 \section{Constraining dark matter with normal modes}
 
@@ -69,6 +83,8 @@ In Ref. 4 and 5, the authors do a similar analysis by relating the proposed dark
 \item Search for light scalar dark matter with atomic gravitational wave detectors
 Asimina Arvanitaki, Peter W. Graham, Jason M. Hogan, Surjeet Rajendran, and Ken Van Tilburg
 Phys. Rev. D 97, 075020 (2018)
+
+\item Gravitational Waves: Volume 1, Michele Maggiore.
 \end{enumerate}
 
 \end{document}
