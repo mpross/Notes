@@ -1,4 +1,8 @@
+
 \documentclass{article}
+
+\usepackage[margin=0.5in]{geometry}
+
 \title{Ultra light dark matter ringing earth normal modes}
 \author{M.P.Ross}
 \begin{document}
@@ -23,10 +27,10 @@ where $c_{\alpha \beta}$ is the spring constant between the $\alpha$th and $\bet
 \[-m_a \omega^2 \sum_i u_{\alpha,i}\hat \mathbf {n}_{\alpha,i}+i \omega \sum_i \gamma_i u_{\alpha,i}\hat \mathbf {n}_{\alpha,i}+\sum^N_\beta c_{\alpha \beta} \sum_i u_{\beta,i}\hat \mathbf {n}_{\beta,i}=\mathbf{f}_\alpha\]
 
 where $u_{\beta,i}$ and $\hat \mathbf {n}_{\beta,i}$ are the amplitude in the ith mode (i represents a selection of n, l, and m) and it's respective normal mode vector. Using the orthogonality and normalization given my Aki and Richards:
-\[\mathbf u_{\alpha}(\mathbf r,\omega)=\sum_i\frac{\sum_\beta \hat \mathbf{n}(\mathbf r_\beta)_{\beta,i} ^*\cdot\mathbf{f}(\mathbf r_\beta,\omega)_\beta}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{\alpha,i}\]
+\[\mathbf u_{\alpha}(\mathbf r,\omega)=\sum_i\frac{\sum_\beta \hat \mathbf{n}(\mathbf r_\beta)_{\beta,i} ^*\cdot\mathbf{f}(\mathbf r_\beta,\omega)_\beta/m_\beta}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{\alpha,i}\]
 
 Generalizing to continuum:
-\[\mathbf u(\mathbf r,\omega)=\sum_i\frac{\int \hat \mathbf{n}(\mathbf r')_{i} ^*\cdot\mathbf{f}(\mathbf r',\omega) dV '}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{i}\]
+\[\mathbf u(\mathbf r,\omega)=\sum_i\frac{\frac{1}{M}\int \hat \mathbf{n}(\mathbf r')_{i} ^*\cdot\mathbf{f}(\mathbf r',\omega) dV '}{-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2}\ \hat \mathbf {n}(\mathbf r)_{i}\]
 
 As reference the normal modes for spheroidal motion for $l\neq 0$ are as follows [6] :
 \[_n\hat \mathbf{n}(\mathbf r)_{l}^m=a_{n,l}(r)Y_l^m(\theta,\phi) \hat \mathbf r +b_{n,l}(r) R  \mathbf \nabla Y_l^m(\theta,\phi) \]
@@ -47,7 +51,13 @@ And for for $l= 0$:
 
 \[_n\hat \mathbf{n}(\mathbf r)_{0}^0=a_{n,0}(r)\hat \mathbf r \]
 
-\[\alpha_{n,l} =c_{n,0}\frac{dj_0(qr)}{d(qr)}\]
+\[a_{n,l} (r)=c_{n,0}\frac{dj_0(qr)}{d(qr)}\]
+
+The normal modes are normalized as follows:
+
+\[ \int \rho \ (_n\hat \mathbf{n}(\mathbf r)_{l}^m)^* \cdot\ _n\hat \mathbf{n}(\mathbf r)_{l}^m dV = M\]
+
+\[ \int \ (_n\hat \mathbf{n}(\mathbf r)_{l}^m)^* \cdot\  _n\hat \mathbf{n}(\mathbf r)_{l}^m dV = V\]
 
 \section{Constraining dark matter with normal modes}
 
@@ -55,17 +65,59 @@ Since the earth normal modes have been measured during times with little to no t
 
 Picking one normal mode and measuring the displacement at the given normal mode frequency would yield the following:
 
-\[\mathbf u(\mathbf r,\omega)=\frac{-i Q}{\omega^2}\ \hat \mathbf {n}(\mathbf r)\int \hat \mathbf{n}(\mathbf r')^*\cdot\mathbf{f}(\mathbf r',\omega) dV '\]
+\[\mathbf u(\mathbf r,\omega)=\frac{-i Q}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\int \hat \mathbf{n}(\mathbf r')^*\cdot\mathbf{f}(\mathbf r',\omega) dV '\]
 
 Substituting the plane wave force in:
 
-\[\mathbf u(\mathbf r,\omega)=\frac{-i Qf(\omega)}{\omega^2}\ \hat \mathbf {n}(\mathbf r)\ \int \hat \mathbf{n}(\mathbf r') ^*\cdot\hat \mathbf{f}e^{i \mathbf p \cdot \mathbf r'} dV '\]
+\[\mathbf u(\mathbf r,\omega)=\frac{-i Qf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ \int \hat \mathbf{n}(\mathbf r') ^*\cdot\hat \mathbf{f}e^{i \mathbf p \cdot \mathbf r'} dV '\]
 
 Expanding plane wave in spherical harmonics:
 
-\[\mathbf u(\mathbf r,\omega)=\frac{-i Qf(\omega)}{\omega^2}\ \hat \mathbf {n}(\mathbf r)\ \int \hat \mathbf{n}(\mathbf r')^*\cdot\hat \mathbf{f}\ \bigg( 4\pi \sum_l \sum_m i^l j_l(pr) Y_l^m(\hat\mathbf p)Y_l^{m *}(\hat\mathbf r)\bigg) dV '\]
+\[\mathbf u(\mathbf r,\omega)=\frac{-i Qf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ \int \hat \mathbf{n}(\mathbf r')^*\cdot\hat \mathbf{f}\ \bigg( 4\pi \sum_{l'} \sum_{m'} i^{l'} j_{l'}(pr') Y_{l'}^{m'}(\hat\mathbf p)Y_{l'}^{m' *}(\hat\mathbf r')\bigg) dV '\]
 
-From here we can substitute the normal mode vector, set up a coordinate system, do the integrals, and (with some assumptions about the placement of the sensor with respect to the nodes of the normal mode) get a relationship between the measured displacement and the amplitude of the plane wave force.
+Aligning the z-axis with the force vector ($\hat f =\hat z$)
+
+\[\mathbf u_{l,m}(\mathbf r,\omega)=\frac{-i Qf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ \bigg( 4\pi \sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p) \int \big(a_{n,l}(r')Y_l^m(\theta',\phi') cos(\theta') +b_{n,l}(r') R sin(\theta') \mathbf \partial_{\theta'} Y_l^m(\theta',\phi')\big) \  j_{l'}(pr') Y_{l'}^{m' *}(\theta',\phi') dV' \bigg)\]
+
+\[\mathbf u_{l,m}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\  \sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p) \bigg(\int_0^R a_{n,l}(r') j_{l'}(pr') r'^2 dr'  \int Y_l^m(\theta',\phi')Y_{l'}^{m' *}(\theta',\phi')  cos(\theta') d\Omega \ +\]
+\[R\ \int_0^Rb_{n,l}(r') j_{l'}(pr')\int sin(\theta') \mathbf \partial_{\theta'} (Y_l^m(\theta',\phi'))Y_{l'}^{m' *}(\theta',\phi') d\Omega \bigg)\]
+
+With this we can then calculate the displacement for a given force using the following parameters and relationships,
+
+\[M=5.972\times10^{24}\ kg\]
+\[R=6371 \ km\]
+\[\rho=5515\ \frac{kg}{m^3}\]
+\[\alpha = \frac{\lambda+2\mu}{\rho}=10\ \frac{km}{s}\]
+\[\beta = \frac{\mu}{\rho}=10\ \frac{km}{s}\]
+\[p=\frac{\omega v}{2\pi c^2}\]
+\[v= 10^{-3}c\]
+\[q=\frac{\omega}{\alpha}\]
+
+From [3] for n=0, l=0, m=0 mode:
+
+\[\omega =2\pi( 0.8\ mHz)\]
+\[Q=7500\]
+\[|_0\ddot{\mathbf u}_{0,0}(\omega)|=7.6\times 10^-8\ \frac{m}{s^2\ \sqrt{Hz}}\]
+
+For n=0, l=0, m=0 mode:
+
+\[\mathbf u_{0,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\  \sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p) \bigg(\int_0^R a_{0,0}(r') j_{l'}(pr') r'^2 dr'  \int Y_0^0(\theta',\phi')Y_{l'}^{m' *}(\theta',\phi')  cos(\theta') d\Omega \bigg)\]
+
+\[\mathbf u_{0,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\  \sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p) \bigg(\int_0^R a_{0,0}(r') j_{l'}(pr') r'^2 dr'  \int \frac{1}{2\sqrt{\pi}}Y_{l'}^{m' *}(\theta',\phi')  \frac{2\sqrt{\pi}}{\sqrt{3}} Y_{1}^{0 }(\theta',\phi') d\Omega \bigg)\]
+
+\[\mathbf u_{0,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{\sqrt{3}M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ Y_{1}^{0}(\hat\mathbf p) \bigg(\int_0^R a_{0,0}(r') j_{1}(pr') r'^2 dr' \bigg)\]
+
+\[\mathbf u_{0,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{\sqrt{3}M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ Y_{1}^{0}(\hat\mathbf p)\ c_{0,0} \int_0^R \frac{dj_0(qr)}{d(qr)} j_{1}(pr') r'^2 dr' \]
+
+\[c_{0,0}^2=\frac{M}{4\pi \rho}\int_0^R \bigg(\frac{dj_0(qr)}{d(qr)}\bigg)^* \frac{dj_0(qr)}{d(qr)} r^2 dr\]
+
+For n=0, l=1, m=0 mode:
+
+\[\mathbf u_{1,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\  \sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p) \bigg(\int_0^R a_{0,1}(r') j_{l'}(pr') r'^2 dr'  \int Y_1^0(\theta',\phi')Y_{l'}^{m' *}(\theta',\phi')  cos(\theta') d\Omega \ +\]
+\[R\ \int_0^Rb_{0,1}(r') j_{l'}(pr')\int sin(\theta') \mathbf \partial_{\theta'} (Y_1^0(\theta',\phi'))Y_{l'}^{m' *}(\theta',\phi') d\Omega \bigg)\]
+
+\[\mathbf u_{1,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ \bigg(\frac{1}{\sqrt{3}}Y_{0}^{0}(\hat\mathbf p) \int_0^R a_{0,1}(r') j_{0}(pr') r'^2 dr' - \frac{2}{\sqrt{15}}Y_{2}^{0}(\hat\mathbf p) \int_0^R a_{0,1}(r') j_{2}(pr') r'^2 dr'  +\]
+\[ \frac{-2}{\sqrt{3}}Y_{0}^{0}(\hat\mathbf p)  R\ \int_0^Rb_{0,1}(r') j_{0}(pr') -   \frac{2}{\sqrt{15}}Y_{2}^{0} (\hat\mathbf p) R\ \int_0^Rb_{0,1}(r') j_{2}(pr')\bigg)\]
 
 \section{Comparison to similar literature}
 In Ref. 4 and 5, the authors do a similar analysis by relating the proposed dark matter fields to a metric strain amplitude and thus set limits on apparent changes of fundamental constants caused by the DM field. This may be able to be generalized to set limits on the coupling strength of the field but the path to this was not obvious when starting this analysis. The above equations however give a framework to calculate the response given any plane wave weakly interacting with the earth at a normal mode frequency.
