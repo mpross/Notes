@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  15 MAR 2019 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  21 MAR 2019 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -207,15 +207,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=542.02501pt
-* \textheight=722.7pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
-* \topmargin=-73.135pt
+* \textwidth=505.89pt
+* \textheight=686.56499pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -246,61 +246,83 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
- []
-
-<Gold_Coating_Fiber.pdf, id=1, 1350.04375pt x 545.03625pt>
-File: Gold_Coating_Fiber.pdf Graphic file (type pdf)
-
-<use Gold_Coating_Fiber.pdf>
-Package pdftex.def Info: Gold_Coating_Fiber.pdf used on input line 46.
-(pdftex.def)             Requested size: 542.02501pt x 218.82567pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 46--48
-[][]
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 54.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 54.
+<Gold_Coating_Fiber.pdf, id=11, 1350.04375pt x 545.03625pt>
+File: Gold_Coating_Fiber.pdf Graphic file (type pdf)
 
-<BS_Coating_Fiber_Time.pdf, id=13, 1350.04375pt x 545.03625pt>
+<use Gold_Coating_Fiber.pdf>
+Package pdftex.def Info: Gold_Coating_Fiber.pdf used on input line 48.
+(pdftex.def)             Requested size: 505.89pt x 204.23007pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 48--50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 56.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 56.
+<BS_Coating_Fiber_Time.pdf, id=12, 1350.04375pt x 545.03625pt>
 File: BS_Coating_Fiber_Time.pdf Graphic file (type pdf)
 
 <use BS_Coating_Fiber_Time.pdf>
-Package pdftex.def Info: BS_Coating_Fiber_Time.pdf used on input line 62.
-(pdftex.def)             Requested size: 542.02501pt x 218.82567pt.
+Package pdftex.def Info: BS_Coating_Fiber_Time.pdf used on input line 64.
+(pdftex.def)             Requested size: 505.89pt x 204.23007pt.
+ <GoldFiberTip.JPG, id=13, 481.8pt x 361.35pt>
+File: GoldFiberTip.JPG Graphic file (type jpg)
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 62--63
-[][] 
+<use GoldFiberTip.JPG>
+Package pdftex.def Info: GoldFiberTip.JPG used on input line 65.
+(pdftex.def)             Requested size: 252.94499pt x 189.70607pt.
+ <GoldFiberTipZoom.JPG, id=14, 481.8pt x 361.35pt>
+File: GoldFiberTipZoom.JPG Graphic file (type jpg)
+
+<use GoldFiberTipZoom.JPG>
+Package pdftex.def Info: GoldFiberTipZoom.JPG used on input line 66.
+(pdftex.def)             Requested size: 252.94499pt x 189.70607pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 64--67
+[][]
  []
 
-[2 <./Gold_Coating_Fiber.pdf> <./BS_Coating_Fiber_Time.pdf>]
-(./BSFiberProcedure.aux) ) 
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 64--67
+[] [] 
+ []
+
+[2 <./Gold_Coating_Fiber.pdf>] [3 <./BS_Coating_Fiber_Time.pdf> <./GoldFiberTip
+.JPG> <./GoldFiberTipZoom.JPG>] (./BSFiberProcedure.aux) ) 
 Here is how much of TeX's memory you used:
- 3385 strings out of 494945
- 49155 string characters out of 6181032
- 115726 words of memory out of 5000000
- 6651 multiletter control sequences out of 15000+600000
+ 3396 strings out of 494945
+ 49377 string characters out of 6181032
+ 115740 words of memory out of 5000000
+ 6659 multiletter control sequences out of 15000+600000
  7588 words of font info for 27 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,6n,32p,576b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on BSFiberProcedure.pdf (2 pages, 481658 bytes).
+</usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb>
+Output written on BSFiberProcedure.pdf (3 pages, 515110 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
