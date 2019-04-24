@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  26 MAR 2019 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.9.25)  24 APR 2019 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,30 +279,34 @@ File: BS_Coating_Fiber_Time.pdf Graphic file (type pdf)
 <use BS_Coating_Fiber_Time.pdf>
 Package pdftex.def Info: BS_Coating_Fiber_Time.pdf used on input line 64.
 (pdftex.def)             Requested size: 505.89pt x 204.23007pt.
- <GoldFiberTip.JPG, id=13, 481.8pt x 361.35pt>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 64--65
+[][] 
+ []
+
+[2 <./Gold_Coating_Fiber.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+<GoldFiberTip.JPG, id=38, 481.8pt x 361.35pt>
 File: GoldFiberTip.JPG Graphic file (type jpg)
-
-<use GoldFiberTip.JPG>
-Package pdftex.def Info: GoldFiberTip.JPG used on input line 65.
+ <use GoldFiberTip.JPG>
+Package pdftex.def Info: GoldFiberTip.JPG used on input line 68.
 (pdftex.def)             Requested size: 252.94499pt x 189.70607pt.
- <GoldFiberTipZoom.JPG, id=14, 481.8pt x 361.35pt>
+
+<GoldFiberTipZoom.JPG, id=39, 481.8pt x 361.35pt>
 File: GoldFiberTipZoom.JPG Graphic file (type jpg)
-
-<use GoldFiberTipZoom.JPG>
-Package pdftex.def Info: GoldFiberTipZoom.JPG used on input line 66.
+ <use GoldFiberTipZoom.JPG>
+Package pdftex.def Info: GoldFiberTipZoom.JPG used on input line 69.
 (pdftex.def)             Requested size: 252.94499pt x 189.70607pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 64--67
-[][]
+Overfull \hbox (17.2222pt too wide) in paragraph at lines 68--70
+[][] [] 
  []
 
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 64--67
-[] [] 
- []
-
-[2 <./Gold_Coating_Fiber.pdf>] [3 <./BS_Coating_Fiber_Time.pdf> <./GoldFiberTip
-.JPG> <./GoldFiberTipZoom.JPG>] (./BSFiberProcedure.aux) ) 
+[3 <./BS_Coating_Fiber_Time.pdf> <./GoldFiberTip.JPG> <./GoldFiberTipZoom.JPG>]
+(./BSFiberProcedure.aux) ) 
 Here is how much of TeX's memory you used:
  3396 strings out of 494945
  49377 string characters out of 6181032
@@ -311,15 +315,14 @@ Here is how much of TeX's memory you used:
  7588 words of font info for 27 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  39i,6n,32p,648b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb>
-Output written on BSFiberProcedure.pdf (3 pages, 515620 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on BSFiberProcedure.pdf (3 pages, 516177 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
