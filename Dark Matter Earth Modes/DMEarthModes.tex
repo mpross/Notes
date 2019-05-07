@@ -2,6 +2,7 @@
 \documentclass{article}
 
 \usepackage[margin=0.5in]{geometry}
+\usepackage{graphicx}
 
 \title{Ultra light dark matter ringing earth normal modes}
 \author{M.P.Ross}
@@ -119,6 +120,20 @@ For n=0, l=1, m=0 mode:
 \[\mathbf u_{1,0}(\mathbf r,\omega)=\frac{- 4\pi iQf(\omega)}{M \omega^2}\ \hat \mathbf {n}(\mathbf r)\ \bigg(\frac{1}{\sqrt{3}}Y_{0}^{0}(\hat\mathbf p) \int_0^R a_{0,1}(r') j_{0}(pr') r'^2 dr' - \frac{2}{\sqrt{15}}Y_{2}^{0}(\hat\mathbf p) \int_0^R a_{0,1}(r') j_{2}(pr') r'^2 dr'  +\]
 \[ \frac{-2}{\sqrt{3}}Y_{0}^{0}(\hat\mathbf p)  R\ \int_0^Rb_{0,1}(r') j_{0}(pr') -   \frac{2}{\sqrt{15}}Y_{2}^{0} (\hat\mathbf p) R\ \int_0^Rb_{0,1}(r') j_{2}(pr')\bigg)\]
 
+\section{Limits}
+With the above equations and a list of measured earth mode frequencies and Q factors (7), one can readily sum the contibutions on the right hand side to get the force per particle given a measured displacement.
+
+\[\mathbf u(\mathbf r,\omega)=\sum_i\frac{4 \pi f(\omega)}{M (-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2)} 
+\hat \mathbf {n}(\mathbf r)_{i}   \sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p_i) \bigg(\int_0^R a_{n,l}(r') j_{l'}(p_ir') r'^2 dr'  \int Y_l^m(\theta', \phi')Y_{l'}^{m' *}(\theta',\phi')  cos(\theta') d\Omega \ \]\[+ R\ \int_0^Rb_{n,l}(r') j_{l'}(p_ir')\int sin(\theta') \mathbf \partial_{\theta'} (Y_l^m(\theta',\phi'))Y_{l'}^{m' *}(\theta',\phi') d\Omega \bigg)\]
+
+Defining:
+\[I_i=\sum_{l'} \sum_{m'} i^{l'}  Y_{l'}^{m'}(\hat\mathbf p_i) \bigg(\int_0^R a_{n,l}(r') j_{l'}(p_ir') r'^2 dr'  \int Y_l^m(\theta', \phi')Y_{l'}^{m' *}(\theta',\phi')  cos(\theta') d\Omega \ \]\[+ R\ \int_0^Rb_{n,l}(r') j_{l'}(p_ir')\int sin(\theta') \mathbf \partial_{\theta'} (Y_l^m(\theta',\phi'))Y_{l'}^{m' *}(\theta',\phi') d\Omega \bigg)\]
+
+\[\mathbf u(\mathbf r,\omega)=\sum_i\frac{4 \pi f(\omega)}{M (-\omega^2 +i\frac{\omega \omega_i}{Q} +\omega_i^2)} 
+\hat \mathbf {n}(\mathbf r)_{i}  I_i\]
+
+\includegraphics[width=\textwidth]{EarthModeLimits.pdf}
+
 \section{Comparison to similar literature}
 In Ref. 4 and 5, the authors do a similar analysis by relating the proposed dark matter fields to a metric strain amplitude and thus set limits on apparent changes of fundamental constants caused by the DM field. This may be able to be generalized to set limits on the coupling strength of the field but the path to this was not obvious when starting this analysis. The above equations however give a framework to calculate the response given any plane wave weakly interacting with the earth at a normal mode frequency.
 
@@ -137,6 +152,8 @@ Asimina Arvanitaki, Peter W. Graham, Jason M. Hogan, Surjeet Rajendran, and Ken 
 Phys. Rev. D 97, 075020 (2018)
 
 \item Gravitational Waves: Volume 1, Michele Maggiore.
+
+\item Free Ocillations: Frequencies and Attenuations, T.G. Masters and R. Widmer. (1995)
 \end{enumerate}
 
 \end{document}
