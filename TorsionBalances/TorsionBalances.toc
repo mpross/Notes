@@ -1,24 +1,26 @@
 \contentsline {section}{\numberline {1}History}{2}% 
 \contentsline {section}{\numberline {2}Introduction}{2}% 
 \contentsline {subsection}{\numberline {2.1}Simple Torsion Balance}{2}% 
-\contentsline {subsection}{\numberline {2.2}Equation of Motion}{3}% 
-\contentsline {section}{\numberline {3}Mechanics}{3}% 
-\contentsline {subsection}{\numberline {3.1}Torque Sensing}{3}% 
-\contentsline {subsection}{\numberline {3.2}Inertial Sensing}{3}% 
-\contentsline {subsection}{\numberline {3.3}Fiber Selection}{3}% 
-\contentsline {subsection}{\numberline {3.4}Pendulum Design}{3}% 
-\contentsline {section}{\numberline {4}Complications}{3}% 
-\contentsline {subsection}{\numberline {4.1}Swing Modes}{3}% 
-\contentsline {subsection}{\numberline {4.2}Centrifugal Force}{3}% 
-\contentsline {subsection}{\numberline {4.3}Multiple Pendulums}{3}% 
-\contentsline {section}{\numberline {5}Noise Sources and Mitigation}{3}% 
-\contentsline {subsection}{\numberline {5.1}Thermal Noise}{3}% 
-\contentsline {subsection}{\numberline {5.2}Seismic Motion}{3}% 
-\contentsline {subsection}{\numberline {5.3}Electrostatic Couplings}{3}% 
-\contentsline {subsection}{\numberline {5.4}Magnetic Noise}{3}% 
-\contentsline {subsection}{\numberline {5.5}Gas Damping}{3}% 
-\contentsline {subsection}{\numberline {5.6}Gravity Gradients}{3}% 
-\contentsline {section}{\numberline {6}Case Study Experiments}{3}% 
-\contentsline {subsection}{\numberline {6.1}Inverse Square Law}{3}% 
-\contentsline {subsection}{\numberline {6.2}Equivalence Principle}{3}% 
-\contentsline {subsection}{\numberline {6.3}Gravitational Wave Detection}{3}% 
+\contentsline {subsection}{\numberline {2.2}Loss Terms}{3}% 
+\contentsline {subsection}{\numberline {2.3}Equations of Motion}{3}% 
+\contentsline {subsection}{\numberline {2.4}Response Function}{4}% 
+\contentsline {section}{\numberline {3}Mechanics}{5}% 
+\contentsline {subsection}{\numberline {3.1}Torque Sensing}{5}% 
+\contentsline {subsection}{\numberline {3.2}Inertial Sensing}{5}% 
+\contentsline {subsection}{\numberline {3.3}Fiber Selection}{5}% 
+\contentsline {subsection}{\numberline {3.4}Pendulum Design}{5}% 
+\contentsline {section}{\numberline {4}Complications}{5}% 
+\contentsline {subsection}{\numberline {4.1}Swing Modes}{5}% 
+\contentsline {subsection}{\numberline {4.2}Centrifugal Force}{5}% 
+\contentsline {subsection}{\numberline {4.3}Multiple Pendulums}{5}% 
+\contentsline {section}{\numberline {5}Noise Sources and Mitigation}{5}% 
+\contentsline {subsection}{\numberline {5.1}Thermal Noise}{5}% 
+\contentsline {subsection}{\numberline {5.2}Seismic Motion}{5}% 
+\contentsline {subsection}{\numberline {5.3}Electrostatic Couplings}{5}% 
+\contentsline {subsection}{\numberline {5.4}Magnetic Noise}{5}% 
+\contentsline {subsection}{\numberline {5.5}Gas Damping}{5}% 
+\contentsline {subsection}{\numberline {5.6}Gravity Gradients}{5}% 
+\contentsline {section}{\numberline {6}Case Study Experiments}{5}% 
+\contentsline {subsection}{\numberline {6.1}Inverse Square Law}{5}% 
+\contentsline {subsection}{\numberline {6.2}Equivalence Principle}{5}% 
+\contentsline {subsection}{\numberline {6.3}Gravitational Wave Detection}{5}% 
