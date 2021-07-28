@@ -1,23 +1,24 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.4.27)  2 JUN 2021 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.4.27)  28 JUL 2021 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **TorsionBalances.tex
 (./TorsionBalances.tex
 LaTeX2e <2018-12-01>
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -42,13 +43,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count89
 LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count90
+\leftroot@=\count91
 LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count92
+\DOTSCASE@=\count93
 LaTeX Info: Redefining \ldots on input line 482.
 LaTeX Info: Redefining \dots on input line 485.
 LaTeX Info: Redefining \cdots on input line 606.
@@ -57,15 +58,15 @@ LaTeX Info: Redefining \cdots on input line 606.
 \big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
 \tag@help=\toks15
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
 \andhelp@=\toks16
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -111,11 +112,7 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(./TorsionBalances.aux
-
-LaTeX Warning: Label `four2' multiply defined.
-
-)
+(./TorsionBalances.aux)
 \openout1 = `TorsionBalances.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -130,18 +127,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
+\scratchcounter=\count101
 \scratchdimen=\dimen114
 \scratchbox=\box29
-\nofMPsegments=\count101
-\nofMParguments=\count102
+\nofMPsegments=\count102
+\nofMParguments=\count103
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count103
+\MPscratchCnt=\count104
 \MPscratchDim=\dimen115
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
 \everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -203,62 +201,101 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./TorsionBalances.toc)
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] (./TorsionBalances.toc)
 \tf@toc=\write3
 \openout3 = `TorsionBalances.toc'.
 
- [1
+ [3] [4
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<SimpleTorsionBalance.pdf, id=11, 614.295pt x 686.565pt>
+]
+Chapter 0.
+[5] [6
+
+]
+Chapter 1.
+<SimpleTorsionBalance.pdf, id=27, 614.295pt x 686.565pt>
 File: SimpleTorsionBalance.pdf Graphic file (type pdf)
 <use SimpleTorsionBalance.pdf>
-Package pdftex.def Info: SimpleTorsionBalance.pdf  used on input line 32.
+Package pdftex.def Info: SimpleTorsionBalance.pdf  used on input line 31.
 (pdftex.def)             Requested size: 224.2479pt x 250.6308pt.
 
-[2 <./SimpleTorsionBalance.pdf>] [3]
-<ResponseFunction.pdf, id=30, 809.0225pt x 612.2875pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] [8 <./SimpleTorsionBalance.pdf>]
+<ResponseFunction.pdf, id=47, 697.60625pt x 438.63875pt>
 File: ResponseFunction.pdf Graphic file (type pdf)
 <use ResponseFunction.pdf>
-Package pdftex.def Info: ResponseFunction.pdf  used on input line 95.
-(pdftex.def)             Requested size: 345.0pt x 261.10164pt.
+Package pdftex.def Info: ResponseFunction.pdf  used on input line 92.
+(pdftex.def)             Requested size: 345.0pt x 216.9294pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]
-Overfull \vbox (181.99011pt too high) has occurred while \output is active []
+[9] [10 <./ResponseFunction.pdf>]
+Chapter 2.
+<TorqueSpectrum.pdf, id=139, 769.87625pt x 345.29pt>
+File: TorqueSpectrum.pdf Graphic file (type pdf)
+<use TorqueSpectrum.pdf>
+Package pdftex.def Info: TorqueSpectrum.pdf  used on input line 114.
+(pdftex.def)             Requested size: 345.0pt x 154.73627pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-[5 <./ResponseFunction.pdf>] (./TorsionBalances.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: There were multiply-defined labels.
+ [11
 
- ) 
+]
+[12 <./TorqueSpectrum.pdf>]
+<InertialSpectrum.pdf, id=195, 769.87625pt x 345.29pt>
+File: InertialSpectrum.pdf Graphic file (type pdf)
+<use InertialSpectrum.pdf>
+Package pdftex.def Info: InertialSpectrum.pdf  used on input line 151.
+(pdftex.def)             Requested size: 345.0pt x 154.73627pt.
+ [13 <./InertialSpectrum.pdf>] [14
+
+]
+Chapter 3.
+[15] [16
+
+]
+Chapter 4.
+[17] [18
+
+]
+Chapter 5.
+[19] (./TorsionBalances.aux) ) 
 Here is how much of TeX's memory you used:
- 2150 strings out of 492615
- 29156 string characters out of 6131390
- 98156 words of memory out of 5000000
- 6034 multiletter control sequences out of 15000+600000
- 11503 words of font info for 45 fonts, out of 8000000 for 9000
+ 2196 strings out of 492615
+ 29801 string characters out of 6131390
+ 98674 words of memory out of 5000000
+ 6077 multiletter control sequences out of 15000+600000
+ 12761 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,599b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb>
-Output written on TorsionBalances.pdf (5 pages, 246421 bytes).
+ 41i,7n,25p,662b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb>
+Output written on TorsionBalances.pdf (19 pages, 351549 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 311 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
